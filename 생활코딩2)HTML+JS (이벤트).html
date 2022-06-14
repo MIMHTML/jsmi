@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>HTML과 JS의 만남 / 이벤트</title>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>이벤트</h1>
+<p>HTML과 JS가 만나는 두번째 방법</p>
+<p>이것은 JS가 사용자와 상호작용하는 데 핵심적인 역할을 하는 것</p>
+
+<p style="margin-top:50px;">버튼을 만들어보자</p>
+<p>이 때 사용하는 태그는 input 태그이다.</p>
+
+<input type="button" value="hi" onclick="alert('hi')"><br><br>
+<img src="버튼이벤트.png" width="50%">
+<p>1. input 태그 안에 type을 button으로 하면 버튼모양이 만들어진다.</p>
+<p>2. 버튼 안에 글씨를 쓰고 싶으면 value라는 속성의 값을 사용</p>
+<p>3. 버튼을 눌렀을 때의 반응은 onclick을 사용</p>
+
+<p style="margin-top:50px;">
+  onclick은 아주 특별한 속성이다.
+</p>
+
+<p>HTML의 설명서에는 이렇게 적혀있다.</p>
+<p>1. 'onclick 속성의 값으로는 반드시 JS가 와야 됩니다.'</p>
+<p>2. 'onclick 속성의 속성 값은 웹브라우저가 기억하고 있다가 <br>
+       이 onclick속성이 위치하고 있는 태그 <br>
+       이것을 사용자가 클릭했을 때 <br>
+       기억하고 있던 JS코드를 JS문법에 따라 해석해 <br>
+       거기 적혀있는대로 웹브라우저가 동작할 것입니다.'</p>
+
+<p style="margin-top:50px;">
+  웹 브라우저 입장에서는 onclick속성을 만나면 <br>
+  '아 alert('hi')라고 하는 것을 기억하고 있다가 <br>
+   사용자가 이 버튼을 클릭하면 그 때 실행해야지' <br>
+   라고 생각하고 기다리고 있다가 실제로 그런 일이 일어났을 때 실행을 한다.'</p>
+
+   <p style="margin-top:50px;">
+   이렇게 웹브라우저 위에서 일어나는 일들을 <br>
+   사건, 영어로는 <strong><u>EVENT</u></strong>라고 한다.</p>
+
+   <p style="margin-top:50px;">
+     버튼 외의 또 다른 이벤트, text를 활용한 이벤트 <br>
+     1) onchange 이벤트 <br>
+     <input type="text" onchange="alert('changed')"> <br>
+     2) onkeydown 이벤트 <br>
+     <input type="text" onkeydown="alert('key down!')"><br>
+     <br>
+     <img src="이벤트2.png" width="40%">
+  </p>
+
+
+  <ol style="margin-top:100px;">
+    <li><a href="생활코딩1)HTML+JS (script태그).html">생활코딩1)HTML+JS (script태그)</a></li>
+    <li><a href="생활코딩2)HTML+JS (이벤트).html">생활코딩2)HTML+JS (이벤트)</a></li>
+    <li><a href="생활코딩3)HTMl+JS (콘솔).html"> 생활코딩3)HTMl+JS (콘솔)</a></li>
+    <li><a href="생활코딩4)문자열과숫자.html"> 생활코딩4)문자열과 숫자</a></li>
+    <li><a href="생활코딩5)변수와 대입연산자.html">생활코딩5)변수와 대입연산자</a></li>
+    <li><a href="생활코딩6)웹브라우저 제어.html">생활코딩6)웹브라우저 제어</a></li>
+    <li><a href="생활코딩7)CSS기초 (style속성).html">생활코딩7)CSS기초 (style속성)</a></li>
+    <li><a href="생활코딩8)CSS기초 (style태그).html">생활코딩8)CSS기초 (style태그)</a></li>
+    <li><a href="생활코딩9)CSS기초 (선택자).html">생활코딩9)CSS기초 선택자</a></li>
+    <li><a href="생활코딩10).html">생활코딩10)</a></li>
+    <li><a href="생활코딩11).html">생활코딩11)</a></li>
+    <li><a href="생활코딩12).html">생활코딩12)</a></li>
+    <li><a href="생활코딩13).html">생활코딩13)</a></li>
+    <li><a href="생활코딩14).html">생활코딩14)</a></li>
+    <li><a href="생활코딩15).html">생활코딩15)</a></li>
+    <li><a href="생활코딩16).html">생활코딩16)</a></li>
+    <li><a href="생활코딩17).html">생활코딩17)</a></li>
+    <li><a href="생활코딩18).html">생활코딩18)</a></li>
+    <li><a href="생활코딩19).html">생활코딩19)</a></li>
+    <li><a href="생활코딩20).html">생활코딩20)</a></li>
+
+  </ol>
+
+  <p style="margin-top:100px;">2022.06.12 김명일</p>
+
+
+
+<p style="margin-top:50px;"><a href="https://www.youtube.com/watch?v=-hdtrReY9Zw&list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf&index=4">유트브 링크</a></p>
+
+  </body>
+
+
+
+</html>

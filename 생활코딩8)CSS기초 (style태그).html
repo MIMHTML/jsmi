@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>CSS기초 / style태그</title>
+    <meta charset="utf-8">
+    <title></title>
+
+
+  </head>
+  <body>
+
+    <h1>style태그</h1>
+    <h1>& 선택자</h1>
+
+    <p>
+      이전 페이지에서 CSS를 웹페이지에 삽입하는 방법으로써 <br>
+      속성이라고 하는 HTML 문법을 이용하는 방법을 살펴봤고, <br>
+      이번 페이지에는 좀 더 효율적인 방법을 살펴보자. <br>
+    <br>
+      <h3>바로 '선택자' 라고 하는 것.</h3> <br>
+
+    <h4>임의의 문장</h4>
+    JavaScript is 명일 the world's most popular programming language.<br>
+    JavaScript is the programming 명일 language of the Web.<br>
+    JavaScript is easy to 명일 learn.<br>
+    This tutorial will teach 명일 you JavaScript from basic to advanced.<br>
+
+    <br><br>
+      <u>*무색무취의 태그사용</u> <br>
+    <h2>div, span</h2>
+    <strong>div : 화면 전체를 쓰는 태그 <br>
+    span : 그 단어만 쓰는 태그</strong> <br>
+
+    <br>
+    div와 span은 같은 용도 인데, <br>
+    화면 전체를 쓰냐, 쓰지 않느냐 차이만 있다고 일단 생각하면 된다. <br>
+<br>
+    우선 제어하고자 하는 단어를 span으로 감싸고 <br>
+    이 감싼 태그에 style을 쓰고 얘를 진하게 표시해보자.<br>
+    <br>
+    <strong>*검색 - CSS text bold</strong><br>
+    <img src="span bold.png" width="70%">
+    <br>
+    JavaScript is <span style="font-weight:bold;">명일</span> the world's most popular programming language.<br>
+    JavaScript is the programming <span style="font-weight:bold;">명일</span> language of the Web.<br>
+    JavaScript is easy to <span style="font-weight:bold;">명일</span> learn.<br>
+    This tutorial will teach <span style="font-weight:bold;">명일</span> you JavaScript from basic to advanced.<br>
+    <br>
+    이렇게 진하게 표시되는 것을 볼 수 있다.<br>
+    그런데 만약 문장 내의 '명일'이라는 단어의 개수가 1억개라면? <br>
+    그리고 그 단어를 계속해서 수정해야 한다면 어떻게 해야 할까? <br>
+    <br>
+    바로 이러한 문제를 해결하기 위해서 <br>
+    CSS에는 아주 환상적인 기능이 마련되어 있다. <br>
+    <br>
+    <h2>style 태그의 사용</h2>
+    style 태그는 마치 script 태그처럼 <br>
+    웹브라우저에게 <br>
+    <u>'style태그 안에 있는 태그는 CSS다.'</u> <br>
+    라는 것을 알려주는 역할을 하는 <strong>'구분자'</strong> 이다.
+<br><br>
+    그럼 이제 웹페이지 안에 있는 1억개라고 가정한 '명일'이라는 단어 부분을 <br>
+    span class = js 로 묶는다. <br>
+
+    <img src="span class.png" width="70%"><br>
+    <br>
+    그리고 이제 웹브라우저에게 <br>
+    '나는 이 웹페이지에 있는 class값이 js인 모든 태그에 대해서 font-weight를 bold로 하고싶어.' <br>
+    라고 얘기하면 된다. 그리고 추가로 글씨 색도 빨간색으로 변경해보자.
+<br>
+<img src="style태그.png" width="20%"><br>
+*여기서 중요한 점은 js 앞에 점(.)을 찍지 않는다면 <br>
+ 이 웹페이지에 있는 태그의 이름이 js인 태그를 가리키는 것이다. <br>
+ 우리가 원하는 것은 class값이 js인 것이다. <br>
+ 따라서 약속되어 있는 점(.)을 js 앞에 찍어줘야 한다. <br><br>
+
+ <strong><u>출력 값 = </u></strong><br>
+    JavaScript is <span class = js>명일</span> the world's most popular programming language.<br>
+    JavaScript is the programming <span class = js>명일</span> language of the Web.<br>
+    JavaScript is easy to <span class = js>명일</span> learn.<br>
+    This tutorial will teach <span class = js>명일</span> you JavaScript from basic to advanced.<br>
+
+<style>
+  .js{
+    font-weight:bold;
+    color:red;
+  }
+</style>
+<br>
+
+    </p>
+
+
+
+
+    <ol style="margin-top:100px;">
+      <li><a href="생활코딩1)HTML+JS (script태그).html">생활코딩1)HTML+JS (script태그)</a></li>
+      <li><a href="생활코딩2)HTML+JS (이벤트).html">생활코딩2)HTML+JS (이벤트)</a></li>
+      <li><a href="생활코딩3)HTMl+JS (콘솔).html"> 생활코딩3)HTMl+JS (콘솔)</a></li>
+      <li><a href="생활코딩4)문자열과숫자.html"> 생활코딩4)문자열과 숫자</a></li>
+      <li><a href="생활코딩5)변수와 대입연산자.html">생활코딩5)변수와 대입연산자</a></li>
+      <li><a href="생활코딩6)웹브라우저 제어.html">생활코딩6)웹브라우저 제어</a></li>
+      <li><a href="생활코딩7)CSS기초 (style속성).html">생활코딩7)CSS기초 (style속성)</a></li>
+      <li><a href="생활코딩8)CSS기초 (style태그).html">생활코딩8)CSS기초 (style태그)</a></li>
+      <li><a href="생활코딩9)CSS기초 (선택자).html">생활코딩9)CSS기초 선택자</a></li>
+      <li><a href="생활코딩10).html">생활코딩10)</a></li>
+      <li><a href="생활코딩11).html">생활코딩11)</a></li>
+      <li><a href="생활코딩12).html">생활코딩12)</a></li>
+      <li><a href="생활코딩13).html">생활코딩13)</a></li>
+      <li><a href="생활코딩14).html">생활코딩14)</a></li>
+      <li><a href="생활코딩15).html">생활코딩15)</a></li>
+      <li><a href="생활코딩16).html">생활코딩16)</a></li>
+      <li><a href="생활코딩17).html">생활코딩17)</a></li>
+      <li><a href="생활코딩18).html">생활코딩18)</a></li>
+      <li><a href="생활코딩19).html">생활코딩19)</a></li>
+      <li><a href="생활코딩20).html">생활코딩20)</a></li>
+
+    </ol>
+
+
+    <p style="margin-top:100px;">2022.06.14 김명일</p>
+
+    <p style="margin-top:50px;"><a href="https://www.youtube.com/watch?v=H2eMtredsK4&list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf&index=10">유트브 링크</a></p>
+
+
+
+  </body>
+</html>
